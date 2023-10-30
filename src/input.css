@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cong-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:md:absolute after:md:bottom-0 after:md:left-0 after:md:bg-coffee-200 after:md:h-0.5 after:md:w-0 hover:after:md:w-full after:md:transition-all after:md:ease-in-out after:md:duration-300;
+}
+
+.cong-top-menu-item-active {
+  @apply text-gray-800 relative after:md:absolute after:md:bottom-0 after:md:left-0 after:md:bg-coffee-200 after:md:h-0.5 after:md:w-full ;
+}
+
+.cong-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.cong-badge-cirle {
+  @apply text-xs text-center rounded-full px-1.5;
+}
+
+.cong-topmenu-extended {
+  @apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
+}
+
+.cong-subheadline {
+  @apply flex justify-center items-center mb-24;
+}
+
+.cong-subheadline-deco-line {
+  @apply  w-8 h-px bg-gray-200;
+}
+
+.cong-subheadline-lable {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
+}
